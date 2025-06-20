@@ -11,10 +11,19 @@ html, body{
 }
 
 body{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background-color:blanchedalmond;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 95vh;
+    height: 95vh;
 }
 
 #card{
@@ -63,4 +72,33 @@ body{
     border-radius: 20px;
     margin: 5px;
     cursor: pointer;
+}
+
+#container{
+    height: 500px;
+    width: 450px;
+    background-color:#000000;    
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#container i{
+    font-size: 50px;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
+    transition: all ease 0.4s;
+
 }
