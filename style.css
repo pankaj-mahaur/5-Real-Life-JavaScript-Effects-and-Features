@@ -290,5 +290,12 @@ body {
   background-size: cover;
   background-position: center;
   z-index: 10;
-  transition: all ease-in-out 0.2s;
+}
+
+#last-section {
+  background: linear-gradient(135deg, #ff9800 0%, #ff5e62 100%);
+}
+#last-section > h1 {
+  color: #fff;
+  font-size: 5vw;
 }

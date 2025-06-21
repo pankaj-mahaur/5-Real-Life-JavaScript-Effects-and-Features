@@ -65,30 +65,46 @@ elem.forEach(function (val) {
 
 var arr = [
   {
-    dp: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "./img/profile.png",
     story:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "./img/post.jpg",
   },
   {
-    dp: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "./img/profile.png",
     story:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "./img/post.jpg",
   },
   {
-    dp: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "./img/profile.png",
     story:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "./img/post.jpg",
   },
   {
-    dp: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "./img/profile.png",
     story:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "./img/post.jpg",
   },
   {
-    dp: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "./img/profile.png",
     story:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "./img/post.jpg",
   },
+  {
+    dp: "./img/profile.png",
+    story:
+      "./img/post.jpg",
+  },
+  {
+    dp: "./img/profile.png",
+    story:
+      "./img/post.jpg",
+  },
+  {
+    dp: "./img/profile.png",
+    story:
+      "./img/post.jpg",
+  },
+  
 ];
 
 var clutter = "";
@@ -105,6 +121,8 @@ var storiyan = document.querySelector("#storiyan")
 storiyan.addEventListener("click", function (dets) {
 
   document.querySelector("#fullscreen").style.display = "block";
+
+  document.querySelector("#fullscreen").style.transition = "all 0.2s ease-in-out";
 
   document.querySelector("#fullscreen").style.backgroundImage = `url(${arr[dets.target.id].story})`;
 
