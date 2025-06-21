@@ -12,7 +12,6 @@ body {
 }
 
 body {
-
   background-color: #ffebcd;
 }
 
@@ -76,7 +75,7 @@ body {
 #container {
   height: 100%;
   width: 100%;
-  background-color: #864C36;
+  background-color: #864c36;
   padding: 10px;
   position: relative;
   overflow: hidden;
@@ -140,55 +139,54 @@ body {
 
 /* 4th */
 
-#head{
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+#head {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.elem{
-    width: 100%;
-    height: 160px;
-    border-bottom: 2px solid #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    gap: 20px;
+.elem {
+  width: 100%;
+  height: 160px;
+  border-bottom: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 20px;
 }
 
-.elem h1{
-    font-size: 5vw;
-    color: #ffffff;
+.elem h1 {
+  font-size: 5vw;
+  color: #ffffff;
 }
 
-.elem > img{
-    height: 120px;
-    width: 120px;
-    margin-left: 20px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    position: absolute;
-    transition: all linear 0.2s;
-    transform: translate(-90%, -10%);
+.elem > img {
+  height: 120px;
+  width: 120px;
+  margin-left: 20px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  position: absolute;
+  transition: all linear 0.2s;
+  transform: translate(-90%, -10%);
 }
-.elem > img:hover{
-    height: 200px;
-    width: 200px;
-    margin-left: 20px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    position: absolute;
-    transition: all linear 0.3s;
-    transform: translate(-50%, -10%);
+.elem > img:hover {
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  position: absolute;
+  transition: all linear 0.3s;
+  transform: translate(-50%, -10%);
 }
 /* 
 .elem > .col {
@@ -239,3 +237,58 @@ body {
 
 /* 5th section */
 
+.card1 {
+  height: 600px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#storiyan {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  padding: 10px 20px;
+  padding-top: 15px;
+  border-bottom: 2px solid #dadada;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#storiyan::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  margin: 2px;
+  height: 65px;
+  width: 65px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+#fullscreen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+  transition: all ease-in-out 0.2s;
+}
