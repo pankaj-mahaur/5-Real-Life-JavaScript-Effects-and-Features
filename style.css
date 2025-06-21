@@ -13,7 +13,7 @@ body {
 
 body {
 
-  background-color: blanchedalmond;
+  background-color: #ffebcd;
 }
 
 .section {
@@ -27,7 +27,7 @@ body {
 }
 
 #card {
-  height: 500px;
+  height: 600px;
   width: 400px;
   background-color: #f1f1f1;
   border-radius: 20px;
@@ -71,18 +71,31 @@ body {
   cursor: pointer;
 }
 
+/* 2nd section */
+
 #container {
-  height: 500px;
-  width: 450px;
-  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  background-color: #864C36;
   padding: 10px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all ease 0.4s;
+}
+
+#container > h1 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 #container img {
-  height: 100%;
-  width: 100%;
+  height: 600px;
+  width: 400px;
   object-fit: cover;
   object-position: center;
 }
@@ -98,28 +111,30 @@ body {
   transition: all ease 0.4s;
 }
 
-/* Custom cursor */
+/* 3rd section */
 
 #main {
   width: 100%;
   height: 100%;
-  background-color: #daab2e;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .cursor {
   position: absolute;
-  height: 20px;
-  width: 20px;
-  background-color: #000000;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
   mix-blend-mode: difference;
   border-radius: 50%;
   transition: all ease 0.2s;
+  transform: translate(-50%, -50%);
 }
 
-#main h1 {
+#main > h1 {
   font-size: 10vw;
 }
 
